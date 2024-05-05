@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "real-life-nuclear-tech-mod",
+	"version": "${version}",
+	"name": "Real Life Nuclear Tech Mod",
+	"description": "This is a Nuclear Mod Made By Orion on mar & Matthew",
+	"authors": [
+		"Orion on mar & Matthew"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/real-life-nuclear-tech-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.nuclear.RealLifeNuclearTechMod"
+		],
+		"client": [
+			"com.nuclear.RealLifeNuclearTechModClient"
+		],
+		"fabric-datagen": [
+			"com.nuclear.RealLifeNuclearTechModDataGenerator"
+		]
+	},
+	"mixins": [
+		"real-life-nuclear-tech-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
